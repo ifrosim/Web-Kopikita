@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Kopikita
+    </title>
+
+    <!-- Tambahkan Tailwind jika belum -->
+    <link rel="stylesheet" href="/assets/app.css" />
+  </head>
+  <body class="min-h-screen bg-gray-100 flex flex-col">
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-brown-800">
+        Kopikita
+      </div>
+      <nav>
+        <a href="/" class="mr-4">Home</a>
+        <a href="/about" class="mr-4">Tentang Kami</a>
+        <a href="/menu" class="mr-4">Menu</a>
+        <a href="/contact" class="mr-4">Kontak</a>
+        <a href="/cart" class="mr-4">Keranjang</a>
+        <a href="/login" class="mr-2">Login</a>
+        <a href="/register">Register</a>
+      </nav>
+    </header>
+
+    <main class="flex-1 p-6">
+      @!section('content')
+    </main>
+  </body>
+</html>
